@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tienda | Tomorrowland Store</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.jpeg">
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS exclusivo de tienda -->
+    <link rel="stylesheet" href="tienda.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo.jpeg" alt="Tomorrowland Store">
+            </a>
+        </div>
+
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="tienda.html" class="active">Tienda</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <a href="#carrito" class="cart">
+            🛒 <span id="cart-count">0</span>
+        </a>
+
+    </header>
+
+
+    <!-- ================= HERO TIENDA ================= -->
+
+    <section class="shop-hero">
+
+        <div class="shop-hero-content">
+
+            <p class="shop-label">
+                TOMORROWLAND STORE / 2026
+            </p>
+
+            <h1>
+                THE<br>
+                <span>COLLECTION.</span>
+            </h1>
+
+            <div class="shop-line"></div>
+
+            <p class="shop-description">
+                Prendas seleccionadas para quienes no quieren
+                vestir como todos.
+            </p>
+
+        </div>
+
+        <div class="shop-year">
+            2026
+        </div>
+
+    </section>
+
+
+    <!-- ================= DROP DESTACADO ================= -->
+
+    <section class="featured-drop">
+
+        <div class="drop-product-image">
+
+            <span class="drop-tag">
+                DROP 01
+            </span>
+
+            <img src="NEGRA.jpeg"
+                alt="NEGRA Tomorrowland">
+
+        </div>
+
+        <div class="drop-product-info">
+
+            <p class="drop-small">
+                NEW ARRIVAL / 001
+            </p>
+
+            <h2>
+                WHITE<br>
+                <span>FUTURE.</span>
+            </h2>
+
+            <p class="drop-text">
+                Una pieza creada para representar
+                la nueva generación de Tomorrowland Store.
+            </p>
+
+            <div class="drop-details">
+
+                <div>
+                    <strong>01</strong>
+                    <span>CAMISETA</span>
+                </div>
+
+                <div>
+                    <strong>2026</strong>
+                    <span>NEW DROP</span>
+                </div>
+
+                <div>
+                    <strong>UNI</strong>
+                    <span>ESTILO</span>
+                </div>
+
+            </div>
+
+            <div class="drop-price">
+                $89.900
+            </div>
+
+            <button class="main-buy-button"
+                onclick="addToCart('Camiseta White Future', 89900)">
+                AGREGAR AL CARRITO →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORÍAS ================= -->
+
+    <section class="shop-controls">
+
+        <div class="shop-title">
+
+            <p>01 — SHOP</p>
+
+            <h2>
+                TODA LA<br>
+                <span>COLECCIÓN.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="shop-categories">
+
+            <button class="category-btn active"
+                onclick="filterProducts('all', this)">
+                TODOS
+            </button>
+
+            <button class="category-btn"
+                onclick="filterProducts('camisetas', this)">
+                CAMISETAS
+            </button>
+
+            <button class="category-btn"
+                onclick="filterProducts('hoodies', this)">
+                HOODIES
+            </button>
+
+            <button class="category-btn"
+                onclick="filterProducts('pantalones', this)">
+                PANTALONES
+            </button>
+
+            <button class="category-btn"
+                onclick="filterProducts('accesorios', this)">
+                ACCESORIOS
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTOS ================= -->
+
+    <main class="shop-products">
+
+
+        <!-- PRODUCTO 1 -->
+
+        <article class="shop-product camisetas">
+
+            <div class="product-image-shop">
+
+                <span class="product-badge">
+                    NEW DROP
+                </span>
+
+                <img src="img/productos/camisa-blanca.jpg"
+                    alt="Camiseta White Future">
+
+                <div class="quick-view">
+                    VER PRODUCTO →
+                </div>
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>
+                    T-SHIRT / 001
+                </span>
+
+                <h3>
+                    CAMISETA WHITE FUTURE
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $89.900
+                    </strong>
+
+                    <button onclick="addToCart('Camiseta White Future', 89900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCTO 2 -->
+
+        <article class="shop-product hoodies">
+
+            <div class="product-image-shop dark-product">
+
+                <span class="product-badge">
+                    NEW
+                </span>
+
+                <div class="fake-product">
+                    TOMORROW
+                </div>
+
+                <div class="quick-view">
+                    VER PRODUCTO →
+                </div>
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>
+                    HOODIE / 002
+                </span>
+
+                <h3>
+                    HOODIE BLACK FUTURE
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $149.900
+                    </strong>
+
+                    <button onclick="addToCart('Hoodie Black Future', 149900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCTO 3 -->
+
+        <article class="shop-product camisetas">
+
+            <div class="product-image-shop dark-product">
+
+                <span class="product-badge">
+                    LIMITED
+                </span>
+
+                <div class="fake-product">
+                    FUTURE
+                </div>
+
+                <div class="quick-view">
+                    VER PRODUCTO →
+                </div>
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>
+                    T-SHIRT / 003
+                </span>
+
+                <h3>
+                    CAMISETA BLACK EDITION
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $94.900
+                    </strong>
+
+                    <button onclick="addToCart('Camiseta Black Edition', 94900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCTO 4 -->
+
+        <article class="shop-product pantalones">
+
+            <div class="product-image-shop dark-product">
+
+                <span class="product-badge">
+                    DROP
+                </span>
+
+                <div class="fake-product">
+                    TL
+                </div>
+
+                <div class="quick-view">
+                    VER PRODUCTO →
+                </div>
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>
+                    PANTS / 004
+                </span>
+
+                <h3>
+                    PANTALÓN URBAN BLACK
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $139.900
+                    </strong>
+
+                    <button onclick="addToCart('Pantalón Urban Black', 139900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCTO 5 -->
+
+        <article class="shop-product accesorios">
+
+            <div class="product-image-shop dark-product">
+
+                <span class="product-badge">
+                    ACCESSORY
+                </span>
+
+                <div class="fake-product">
+                    77
+                </div>
+
+                <div class="quick-view">
+                    VER PRODUCTO →
+                </div>
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>
+                    CAP / 005
+                </span>
+
+                <h3>
+                    GORRA TOMORROWLAND
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $59.900
+                    </strong>
+
+                    <button onclick="addToCart('Gorra Tomorrowland', 59900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCTO 6 -->
+
+        <article class="shop-product hoodies">
+
+            <div class="product-image-shop dark-product">
+
+                <span class="product-badge">
+                    PREMIUM
+                </span>
+
+                <div class="fake-product">
+                    NOW
+                </div>
+
+                <div class="quick-view">
+                    VER PRODUCTO →
+                </div>
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>
+                    HOODIE / 006
+                </span>
+
+                <h3>
+                    HOODIE FUTURE WHITE
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $159.900
+                    </strong>
+
+                    <button onclick="addToCart('Hoodie Future White', 159900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <!-- ================= BANNER ================= -->
+
+    <section class="shop-banner">
+
+        <div class="banner-content">
+
+            <span>
+                TOMORROWLAND STORE / DROP 01
+            </span>
+
+            <h2>
+                THE FUTURE<br>
+                <strong>IS NOW.</strong>
+            </h2>
+
+            <a href="contacto.html">
+                HABLA CON NOSOTROS →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CARRITO ================= -->
+
+    <section class="cart-section" id="carrito">
+
+        <div class="cart-header">
+
+            <div>
+                <p>02 — SHOPPING BAG</p>
+
+                <h2>
+                    TU<br>
+                    <span>CARRITO.</span>
+                </h2>
+            </div>
+
+            <div class="cart-counter-large">
+                <span id="cart-count-large">0</span>
+                PRODUCTOS
+            </div>
+
+        </div>
+
+
+        <div id="cart-items" class="cart-items">
+
+            <p class="empty-cart">
+                Tu carrito está vacío.
+            </p>
+
+        </div>
+
+
+        <div class="cart-total-area">
+
+            <span>
+                TOTAL
+            </span>
+
+            <strong id="cart-total">
+                $0
+            </strong>
+
+        </div>
+
+
+        <button class="checkout-button"
+            onclick="sendWhatsApp()">
+            FINALIZAR PEDIDO POR WHATSAPP →
+        </button>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <img src="img/logo.png"
+                alt="Tomorrowland Store">
+
+        </div>
+
+        <p>
+            © 2026 Tomorrowland Store.
+            Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/script.js"></script>
+
+
+    <script>
+
+        /*
+        Actualiza el contador grande del carrito
+        */
+
+        function updateShopCartCounter() {
+
+            const counter =
+                document.getElementById("cart-count-large");
+
+            if (counter) {
+
+                counter.textContent = cart.length;
+
+            }
+
+        }
+
+
+        /*
+        Reemplazamos la función original
+        para actualizar todos los contadores.
+        */
+
+        const originalUpdateCartCount =
+            window.updateCartCount;
+
+        window.updateCartCount = function () {
+
+            if (typeof originalUpdateCartCount === "function") {
+
+                originalUpdateCartCount();
+
+            }
+
+            updateShopCartCounter();
+
+        };
+
+
+        /*
+        Filtro de productos
+        */
+
+        function filterProducts(category, button) {
+
+            const products =
+                document.querySelectorAll(".shop-product");
+
+            products.forEach(product => {
+
+                if (
+                    category === "all" ||
+                    product.classList.contains(category)
+                ) {
+
+                    product.style.display = "";
+
+                } else {
+
+                    product.style.display = "none";
+
+                }
+
+            });
+
+
+            document
+                .querySelectorAll(".category-btn")
+                .forEach(btn => {
+
+                    btn.classList.remove("active");
+
+                });
+
+
+            if (button) {
+
+                button.classList.add("active");
+
+            }
+
+        }
+
+
+        /*
+        Actualizar carrito al cargar
+        */
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            updateShopCartCounter();
+
+        });
+
+    </script>
+
+</body>
+
+</html>
