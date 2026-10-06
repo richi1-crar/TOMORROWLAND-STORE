@@ -2695,3 +2695,88 @@ footer {
         font-size: 110px;
     }
 }
+/* =====================================================
+   MENÚ RESPONSIVE — CELULAR
+   ===================================================== */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 1;
+    z-index: 1001;
+}
+
+/* CELULAR */
+@media (max-width: 767px) {
+
+    .header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 18px;
+        min-height: 65px;
+        z-index: 1000;
+    }
+
+    .logo-container {
+        z-index: 1002;
+    }
+
+    .logo-container img {
+        width: 125px;
+        height: auto;
+    }
+
+    .menu-toggle {
+        display: block;
+        order: 3;
+    }
+
+    .cart {
+        margin-left: auto;
+        margin-right: 15px;
+        order: 2;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #111;
+        flex-direction: column;
+        padding: 15px 20px 25px;
+        border-top: 1px solid #333;
+        box-shadow: 0 10px 25px rgba(0,0,0,.4);
+        z-index: 999;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav a {
+        display: block;
+        width: 100%;
+        padding: 16px 10px;
+        border-bottom: 1px solid #292929;
+        text-align: left;
+        font-size: 15px;
+        color: #fff;
+    }
+
+    .nav a:last-child {
+        border-bottom: none;
+    }
+
+    .nav a:hover {
+        color: #00c853;
+    }
+}
