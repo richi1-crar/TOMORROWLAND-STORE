@@ -262,3 +262,51 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+/* =========================================================
+   MENU MOVIL
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const mainNav = document.getElementById("main-nav");
+
+    if (!menuToggle || !mainNav) {
+        return;
+    }
+
+    menuToggle.addEventListener("click", function () {
+
+        mainNav.classList.toggle("active");
+
+        if (mainNav.classList.contains("active")) {
+
+            menuToggle.textContent = "✕";
+
+        } else {
+
+            menuToggle.textContent = "☰";
+
+        }
+
+    });
+
+
+    /* Cerrar menú al tocar una opción */
+
+    const navLinks = mainNav.querySelectorAll("a");
+
+    navLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            mainNav.classList.remove("active");
+
+            menuToggle.textContent = "☰";
+
+        });
+
+    });
+
+});
