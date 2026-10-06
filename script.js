@@ -236,28 +236,29 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
     const mainNav = document.getElementById("main-nav");
 
-    if (menuToggle && mainNav) {
+    if (!menuToggle || !mainNav) return;
 
-        menuToggle.addEventListener("click", function () {
+    menuToggle.addEventListener("click", function () {
 
-            mainNav.classList.toggle("active");
+        mainNav.classList.toggle("active");
 
-            if (mainNav.classList.contains("active")) {
-                menuToggle.textContent = "✕";
-            } else {
-                menuToggle.textContent = "☰";
-            }
+        if (mainNav.classList.contains("active")) {
+            menuToggle.textContent = "✕";
+        } else {
+            menuToggle.textContent = "☰";
+        }
+
+    });
+
+    mainNav.querySelectorAll("a").forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            mainNav.classList.remove("active");
+            menuToggle.textContent = "☰";
 
         });
 
-        const links = mainNav.querySelectorAll("a");
-
-        links.forEach(link => {
-            link.addEventListener("click", function () {
-                mainNav.classList.remove("active");
-                menuToggle.textContent = "☰";
-            });
-        });
-    }
+    });
 
 });
