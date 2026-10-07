@@ -7,19 +7,15 @@
 
     <title>Tienda | Tomorrowland Store</title>
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="logo.jpeg">
 
-    <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <!-- CSS principal -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- CSS exclusivo de tienda -->
     <link rel="stylesheet" href="tienda.css">
 </head>
 
@@ -29,44 +25,46 @@
 
     <header class="header">
 
-    <div class="logo-container">
-        <a href="index.html">
-            <img src="logo.jpeg" alt="Tomorrowland Store">
-        </a>
-    </div>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo.jpeg" alt="Tomorrowland Store">
+            </a>
+        </div>
 
-    <nav class="nav" id="main-nav">
+        <nav class="nav" id="main-nav">
 
-        <a href="index.html">Inicio</a>
+            <a href="index.html">Inicio</a>
 
-        <a href="tienda.html">Tienda</a>
+            <a href="tienda.html">Tienda</a>
 
-        <a href="nosotros.html">Nosotros</a>
+            <a href="nosotros.html">Nosotros</a>
 
-        <a href="contacto.html">Contacto</a>
+            <a href="contacto.html">Contacto</a>
 
-    </nav>
+        </nav>
 
-    <div class="header-actions">
+        <div class="header-actions">
 
-        <a href="tienda.html#carrito" class="cart">
-            🛒 <span id="cart-count">0</span>
-        </a>
+            <a href="#carrito" class="cart">
+                🛒 <span id="cart-count">0</span>
+            </a>
 
-        <button
-            class="menu-toggle"
-            id="menu-toggle"
-            type="button"
-            aria-label="Abrir menú">
-            ☰
-        </button>
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Abrir menú">
 
-    </div>
+                ☰
 
-</header>
+            </button>
+
+        </div>
+
+    </header>
 
 
-    <!-- ================= HERO TIENDA ================= -->
+    <!-- ================= HERO ================= -->
 
     <section class="shop-hero">
 
@@ -107,10 +105,12 @@
                 DROP 01
             </span>
 
-            <img src="NEGRA.jpeg"
-                alt="NEGRA Tomorrowland">
+            <img
+                src="NEGRA.jpeg"
+                alt="Prenda destacada Tomorrowland">
 
         </div>
+
 
         <div class="drop-product-info">
 
@@ -151,9 +151,12 @@
                 $89.900
             </div>
 
-            <button class="main-buy-button"
+            <button
+                class="main-buy-button"
                 onclick="addToCart('Camiseta White Future', 89900)">
+
                 AGREGAR AL CARRITO →
+
             </button>
 
         </div>
@@ -179,27 +182,32 @@
 
         <div class="shop-categories">
 
-            <button class="category-btn active"
+            <button
+                class="category-btn active"
                 onclick="filterProducts('all', this)">
                 TODOS
             </button>
 
-            <button class="category-btn"
+            <button
+                class="category-btn"
                 onclick="filterProducts('camisetas', this)">
                 CAMISETAS
             </button>
 
-            <button class="category-btn"
+            <button
+                class="category-btn"
                 onclick="filterProducts('hoodies', this)">
                 HOODIES
             </button>
 
-            <button class="category-btn"
+            <button
+                class="category-btn"
                 onclick="filterProducts('pantalones', this)">
                 PANTALONES
             </button>
 
-            <button class="category-btn"
+            <button
+                class="category-btn"
                 onclick="filterProducts('accesorios', this)">
                 ACCESORIOS
             </button>
@@ -209,13 +217,19 @@
     </section>
 
 
-    <!-- ================= PRODUCTOS ================= -->
+    <!-- =====================================================
+         PRODUCTOS
+         ===================================================== -->
 
     <main class="shop-products">
 
 
-        <!-- PRODUCTO 1 -->
+        <!-- =================================================
+             CAMISETAS
+             ================================================= -->
 
+
+        <!-- 01 -->
         <article class="shop-product camisetas">
 
             <div class="product-image-shop">
@@ -224,20 +238,15 @@
                     NEW DROP
                 </span>
 
-                <img src="img/productos/camisa-blanca.jpg"
+                <img
+                    src="camisa2.jpeg"
                     alt="Camiseta White Future">
-
-                <div class="quick-view">
-                    VER PRODUCTO →
-                </div>
 
             </div>
 
             <div class="product-shop-info">
 
-                <span>
-                    T-SHIRT / 001
-                </span>
+                <span>T-SHIRT / 001</span>
 
                 <h3>
                     CAMISETA WHITE FUTURE
@@ -249,7 +258,8 @@
                         $89.900
                     </strong>
 
-                    <button onclick="addToCart('Camiseta White Future', 89900)">
+                    <button
+                        onclick="addToCart('Camiseta White Future', 89900)">
                         +
                     </button>
 
@@ -260,81 +270,27 @@
         </article>
 
 
-        <!-- PRODUCTO 2 -->
+        <!-- 02 -->
+        <article class="shop-product camisetas">
 
-        <article class="shop-product hoodies">
-
-            <div class="product-image-shop dark-product">
+            <div class="product-image-shop">
 
                 <span class="product-badge">
                     NEW
                 </span>
 
-                <div class="fake-product">
-                    TOMORROW
-                </div>
-
-                <div class="quick-view">
-                    VER PRODUCTO →
-                </div>
+                <img
+                    src="camisa negra.jpeg"
+                    alt="Camiseta Black Future">
 
             </div>
 
             <div class="product-shop-info">
 
-                <span>
-                    HOODIE / 002
-                </span>
+                <span>T-SHIRT / 002</span>
 
                 <h3>
-                    HOODIE BLACK FUTURE
-                </h3>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        $149.900
-                    </strong>
-
-                    <button onclick="addToCart('Hoodie Black Future', 149900)">
-                        +
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- PRODUCTO 3 -->
-
-        <article class="shop-product camisetas">
-
-            <div class="product-image-shop dark-product">
-
-                <span class="product-badge">
-                    LIMITED
-                </span>
-
-                <div class="fake-product">
-                    FUTURE
-                </div>
-
-                <div class="quick-view">
-                    VER PRODUCTO →
-                </div>
-
-            </div>
-
-            <div class="product-shop-info">
-
-                <span>
-                    T-SHIRT / 003
-                </span>
-
-                <h3>
-                    CAMISETA BLACK EDITION
+                    CAMISETA BLACK FUTURE
                 </h3>
 
                 <div class="product-bottom">
@@ -343,7 +299,8 @@
                         $94.900
                     </strong>
 
-                    <button onclick="addToCart('Camiseta Black Edition', 94900)">
+                    <button
+                        onclick="addToCart('Camiseta Black Future', 94900)">
                         +
                     </button>
 
@@ -354,43 +311,119 @@
         </article>
 
 
-        <!-- PRODUCTO 4 -->
+        <!-- 03 -->
+        <article class="shop-product camisetas">
 
-        <article class="shop-product pantalones">
+            <div class="product-image-shop">
 
-            <div class="product-image-shop dark-product">
+                <span class="product-badge">
+                    LIMITED
+                </span>
+
+                <img
+                    src="camisapremi.jpeg"
+                    alt="Camiseta  white Future">
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>T-SHIRT / 003</span>
+
+                <h3>
+                    CAMISETA WHITE FUTURE
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $94.900
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Camiseta Red Future', 94900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 04 -->
+        <article class="shop-product camisetas">
+
+            <div class="product-image-shop">
+
+                <span class="product-badge">
+                    OVERSIZE
+                </span>
+
+                <img
+                    src="oversa.jpeg"
+                    alt="Camiseta Oversize">
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>T-SHIRT / 004</span>
+
+                <h3>
+                    CAMISETA OVERSIZE
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $99.900
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Camiseta Oversize', 99900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 05 -->
+        <article class="shop-product camisetas">
+
+            <div class="product-image-shop">
 
                 <span class="product-badge">
                     DROP
                 </span>
 
-                <div class="fake-product">
-                    TL
-                </div>
-
-                <div class="quick-view">
-                    VER PRODUCTO →
-                </div>
+                <img
+                    src="urban.jpeg"
+                    alt="Camiseta Urban">
 
             </div>
 
             <div class="product-shop-info">
 
-                <span>
-                    PANTS / 004
-                </span>
+                <span>T-SHIRT / 005</span>
 
                 <h3>
-                    PANTALÓN URBAN BLACK
+                    CAMISETA URBAN
                 </h3>
 
                 <div class="product-bottom">
 
                     <strong>
-                        $139.900
+                        $89.900
                     </strong>
 
-                    <button onclick="addToCart('Pantalón Urban Black', 139900)">
+                    <button
+                        onclick="addToCart('Camiseta Urban', 89900)">
                         +
                     </button>
 
@@ -401,78 +434,112 @@
         </article>
 
 
-        <!-- PRODUCTO 5 -->
+        <!-- 06 -->
+        <article class="shop-product camisetas">
 
-        <article class="shop-product accesorios">
-
-            <div class="product-image-shop dark-product">
-
-                <span class="product-badge">
-                    ACCESSORY
-                </span>
-
-                <div class="fake-product">
-                    77
-                </div>
-
-                <div class="quick-view">
-                    VER PRODUCTO →
-                </div>
-
-            </div>
-
-            <div class="product-shop-info">
-
-                <span>
-                    CAP / 005
-                </span>
-
-                <h3>
-                    GORRA TOMORROWLAND
-                </h3>
-
-                <div class="product-bottom">
-
-                    <strong>
-                        $59.900
-                    </strong>
-
-                    <button onclick="addToCart('Gorra Tomorrowland', 59900)">
-                        +
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- PRODUCTO 6 -->
-
-        <article class="shop-product hoodies">
-
-            <div class="product-image-shop dark-product">
+            <div class="product-image-shop">
 
                 <span class="product-badge">
                     PREMIUM
                 </span>
 
-                <div class="fake-product">
-                    NOW
-                </div>
-
-                <div class="quick-view">
-                    VER PRODUCTO →
-                </div>
+                <img
+                    src="camisa blanca.jpeg"
+                    alt="Camiseta Premium">
 
             </div>
 
             <div class="product-shop-info">
 
-                <span>
-                    HOODIE / 006
+                <span>T-SHIRT / 006</span>
+
+                <h3>
+                    CAMISETA PREMIUM
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $109.900
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Camiseta Premium', 109900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             HOODIES
+             ================================================= -->
+
+
+        <!-- 07 -->
+        <article class="shop-product hoodies">
+
+            <div class="product-image-shop">
+
+                <span class="product-badge">
+                    NEW
                 </span>
+
+                <img
+                    src="hoo23.jpeg"
+                    alt="Hoodie red Future">
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>HOODIE / 007</span>
+
+                <h3>
+                    HOODIE RED FUTURE
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $149.900
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Hoodie Black Future', 149900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 08 -->
+        <article class="shop-product hoodies">
+
+            <div class="product-image-shop">
+
+                <span class="product-badge">
+                    PREMIUM
+                </span>
+
+                <img
+                    src="hoo45.jpeg"
+                    alt="Hoodie Future White">
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>HOODIE / 008</span>
 
                 <h3>
                     HOODIE FUTURE WHITE
@@ -484,7 +551,512 @@
                         $159.900
                     </strong>
 
-                    <button onclick="addToCart('Hoodie Future White', 159900)">
+                    <button
+                        onclick="addToCart('Hoodie Future White', 159900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 09 -->
+        <article class="shop-product hoodies">
+
+            <div class="product-image-shop">
+
+                <span class="product-badge">
+                    DROP
+                </span>
+
+                <img
+                    src="suda.jpeg"
+                    alt="Hoodie white Future">
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>HOODIE / 009</span>
+
+                <h3>
+                    HOODIE WHITE FUTURE
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $154.900
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Hoodie Grey', 154900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 10 -->
+        <article class="shop-product hoodies">
+
+            <div class="product-image-shop">
+
+                <span class="product-badge">
+                    LIMITED
+                </span>
+
+                <img
+                    src="img/productos/hoodies/hoodie-oversize.jpg"
+                    alt="Hoodie Oversize">
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>HOODIE / 010</span>
+
+                <h3>
+                    HOODIE OVERSIZE
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $169.900
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Hoodie Oversize', 169900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 11 -->
+        <article class="shop-product hoodies">
+
+            <div class="product-image-shop">
+
+                <span class="product-badge">
+                    NEW DROP
+                </span>
+
+                <img
+                    src="img/productos/hoodies/hoodie-urban.jpg"
+                    alt="Hoodie Urban">
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>HOODIE / 011</span>
+
+                <h3>
+                    HOODIE URBAN
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $164.900
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Hoodie Urban', 164900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             PANTALONES
+             ================================================= -->
+
+
+        <!-- 12 -->
+        <article class="shop-product pantalones">
+
+            <div class="product-image-shop">
+
+                <span class="product-badge">
+                    DROP
+                </span>
+
+                <img
+                    src="img/productos/pantalones/pantalon-negro.jpg"
+                    alt="Pantalón Urban Black">
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>PANTS / 012</span>
+
+                <h3>
+                    PANTALÓN URBAN BLACK
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $139.900
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Pantalón Urban Black', 139900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 13 -->
+        <article class="shop-product pantalones">
+
+            <div class="product-image-shop">
+
+                <span class="product-badge">
+                    NEW
+                </span>
+
+                <img
+                    src="img/productos/pantalones/pantalon-cargo.jpg"
+                    alt="Pantalón Cargo">
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>PANTS / 013</span>
+
+                <h3>
+                    PANTALÓN CARGO
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $149.900
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Pantalón Cargo', 149900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 14 -->
+        <article class="shop-product pantalones">
+
+            <div class="product-image-shop">
+
+                <span class="product-badge">
+                    URBAN
+                </span>
+
+                <img
+                    src="img/productos/pantalones/pantalon-jean.jpg"
+                    alt="Jean Urban">
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>PANTS / 014</span>
+
+                <h3>
+                    JEAN URBAN
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $159.900
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Jean Urban', 159900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 15 -->
+        <article class="shop-product pantalones">
+
+            <div class="product-image-shop">
+
+                <span class="product-badge">
+                    PREMIUM
+                </span>
+
+                <img
+                    src="img/productos/pantalones/pantalon-wide.jpg"
+                    alt="Pantalón Wide">
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>PANTS / 015</span>
+
+                <h3>
+                    PANTALÓN WIDE
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $169.900
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Pantalón Wide', 169900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             ACCESORIOS
+             ================================================= -->
+
+
+        <!-- 16 -->
+        <article class="shop-product accesorios">
+
+            <div class="product-image-shop">
+
+                <span class="product-badge">
+                    ACCESSORY
+                </span>
+
+                <img
+                    src="img/productos/accesorios/gorra-negra.jpg"
+                    alt="Gorra Tomorrowland">
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>CAP / 016</span>
+
+                <h3>
+                    GORRA TOMORROWLAND
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $59.900
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Gorra Tomorrowland', 59900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 17 -->
+        <article class="shop-product accesorios">
+
+            <div class="product-image-shop">
+
+                <span class="product-badge">
+                    NEW
+                </span>
+
+                <img
+                    src="img/productos/accesorios/gorra-blanca.jpg"
+                    alt="Gorra White">
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>CAP / 017</span>
+
+                <h3>
+                    GORRA WHITE
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $59.900
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Gorra White', 59900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 18 -->
+        <article class="shop-product accesorios">
+
+            <div class="product-image-shop">
+
+                <span class="product-badge">
+                    ACCESSORY
+                </span>
+
+                <img
+                    src="img/productos/accesorios/bolso.jpg"
+                    alt="Bolso Urban">
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>BAG / 018</span>
+
+                <h3>
+                    BOLSO URBAN
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $79.900
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Bolso Urban', 79900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 19 -->
+        <article class="shop-product accesorios">
+
+            <div class="product-image-shop">
+
+                <span class="product-badge">
+                    LIMITED
+                </span>
+
+                <img
+                    src="conjunto.jpeg"
+                    alt="conjunto Tomorrowland">
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>BELT / 019</span>
+
+                <h3>
+                    conjunto Tomorrowland
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $49.900
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Cinturón Urban', 49900)">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 20 -->
+        <article class="shop-product accesorios">
+
+            <div class="product-image-shop">
+
+                <span class="product-badge">
+                    PREMIUM
+                </span>
+
+                <img
+                    src="conjunto23.jpeg"
+                    alt="conjunto Premium">
+
+            </div>
+
+            <div class="product-shop-info">
+
+                <span>BAG / 020</span>
+
+                <h3>
+                    CONJUNTO PREMIUM
+                </h3>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        $99.900
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Bolso Premium', 99900)">
                         +
                     </button>
 
@@ -523,28 +1095,41 @@
 
     <!-- ================= CARRITO ================= -->
 
-    <section class="cart-section" id="carrito">
+    <section
+        class="cart-section"
+        id="carrito">
 
         <div class="cart-header">
 
             <div>
-                <p>02 — SHOPPING BAG</p>
+
+                <p>
+                    02 — SHOPPING BAG
+                </p>
 
                 <h2>
                     TU<br>
                     <span>CARRITO.</span>
                 </h2>
+
             </div>
 
             <div class="cart-counter-large">
-                <span id="cart-count-large">0</span>
+
+                <span id="cart-count-large">
+                    0
+                </span>
+
                 PRODUCTOS
+
             </div>
 
         </div>
 
 
-        <div id="cart-items" class="cart-items">
+        <div
+            id="cart-items"
+            class="cart-items">
 
             <p class="empty-cart">
                 Tu carrito está vacío.
@@ -566,9 +1151,12 @@
         </div>
 
 
-        <button class="checkout-button"
+        <button
+            class="checkout-button"
             onclick="sendWhatsApp()">
+
             FINALIZAR PEDIDO POR WHATSAPP →
+
         </button>
 
     </section>
@@ -580,7 +1168,8 @@
 
         <div class="footer-logo">
 
-            <img src="img/logo.png"
+            <img
+                src="logo.jpeg"
                 alt="Tomorrowland Store">
 
         </div>
@@ -593,62 +1182,24 @@
     </footer>
 
 
-    <!-- ================= JAVASCRIPT ================= -->
+    <!-- ================= JS ================= -->
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 
 
     <script>
 
-        /*
-        Actualiza el contador grande del carrito
-        */
-
-        function updateShopCartCounter() {
-
-            const counter =
-                document.getElementById("cart-count-large");
-
-            if (counter) {
-
-                counter.textContent = cart.length;
-
-            }
-
-        }
-
-
-        /*
-        Reemplazamos la función original
-        para actualizar todos los contadores.
-        */
-
-        const originalUpdateCartCount =
-            window.updateCartCount;
-
-        window.updateCartCount = function () {
-
-            if (typeof originalUpdateCartCount === "function") {
-
-                originalUpdateCartCount();
-
-            }
-
-            updateShopCartCounter();
-
-        };
-
-
-        /*
-        Filtro de productos
-        */
+        /* ==========================================
+           FILTRO DE PRODUCTOS
+           ========================================== */
 
         function filterProducts(category, button) {
 
             const products =
                 document.querySelectorAll(".shop-product");
 
-            products.forEach(product => {
+
+            products.forEach(function(product) {
 
                 if (
                     category === "all" ||
@@ -668,7 +1219,7 @@
 
             document
                 .querySelectorAll(".category-btn")
-                .forEach(btn => {
+                .forEach(function(btn) {
 
                     btn.classList.remove("active");
 
@@ -676,23 +1227,112 @@
 
 
             if (button) {
-
                 button.classList.add("active");
+            }
+
+        }
+
+
+        /* ==========================================
+           CONTADOR GRANDE
+           ========================================== */
+
+        function updateLargeCartCounter() {
+
+            const counter =
+                document.getElementById("cart-count-large");
+
+
+            if (counter && typeof cart !== "undefined") {
+
+                counter.textContent =
+                    cart.length;
 
             }
 
         }
 
 
-        /*
-        Actualizar carrito al cargar
-        */
+        /* ==========================================
+           ACTUALIZAR CARRITO
+           ========================================== */
 
-        document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener(
+            "DOMContentLoaded",
+            function() {
 
-            updateShopCartCounter();
+                updateLargeCartCounter();
 
-        });
+            }
+        );
+
+
+        /* ==========================================
+           MENÚ MÓVIL
+           ========================================== */
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            function() {
+
+                const menuToggle =
+                    document.getElementById("menu-toggle");
+
+                const mainNav =
+                    document.getElementById("main-nav");
+
+
+                if (!menuToggle || !mainNav) {
+                    return;
+                }
+
+
+                menuToggle.addEventListener(
+                    "click",
+                    function() {
+
+                        mainNav.classList.toggle("active");
+
+
+                        if (
+                            mainNav.classList.contains("active")
+                        ) {
+
+                            menuToggle.textContent = "✕";
+
+                        } else {
+
+                            menuToggle.textContent = "☰";
+
+                        }
+
+                    }
+                );
+
+
+                const links =
+                    mainNav.querySelectorAll("a");
+
+
+                links.forEach(function(link) {
+
+                    link.addEventListener(
+                        "click",
+                        function() {
+
+                            mainNav.classList.remove(
+                                "active"
+                            );
+
+                            menuToggle.textContent = "☰";
+
+                        }
+                    );
+
+                });
+
+            }
+        );
 
     </script>
 
