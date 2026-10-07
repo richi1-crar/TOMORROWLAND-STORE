@@ -18,6 +18,29 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tienda.css">
 </head>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const imagenes = document.querySelectorAll("img");
+
+    imagenes.forEach(function (imagen) {
+
+        imagen.addEventListener("error", function () {
+
+            if (imagen.dataset.errorHandled) {
+                return;
+            }
+
+            imagen.dataset.errorHandled = "true";
+
+            imagen.src = "img/productos/camisetas/camiseta-blanca.jpg";
+
+        });
+
+    });
+
+});
+</script>
 
 <body>
 
@@ -210,6 +233,12 @@
                 class="category-btn"
                 onclick="filterProducts('accesorios', this)">
                 ACCESORIOS
+
+                <button
+    class="category-btn"
+    onclick="filterProducts('chaquetas', this)">
+    CHAQUETAS
+</button>
             </button>
 
         </div>
@@ -702,7 +731,7 @@
                 </span>
 
                 <img
-                    src="img/productos/pantalones/pantalon-negro.jpg"
+                    src=""
                     alt="Pantalón Urban Black">
 
             </div>
@@ -743,7 +772,7 @@
                 </span>
 
                 <img
-                    src="img/productos/pantalones/pantalon-cargo.jpg"
+                    src="pantalones.jpeg"
                     alt="Pantalón Cargo">
 
             </div>
@@ -872,7 +901,7 @@
                 </span>
 
                 <img
-                    src="img/productos/accesorios/gorra-negra.jpg"
+                    src="gorra1.jpeg"
                     alt="Gorra Tomorrowland">
 
             </div>
@@ -913,7 +942,7 @@
                 </span>
 
                 <img
-                    src="img/productos/accesorios/gorra-blanca.jpg"
+                    src="gorra2.jpeg"
                     alt="Gorra White">
 
             </div>
@@ -954,8 +983,8 @@
                 </span>
 
                 <img
-                    src="img/productos/accesorios/bolso.jpg"
-                    alt="Bolso Urban">
+                    src="gorra3.jpeg"
+                    alt="GORRA URBAN">
 
             </div>
 
@@ -981,6 +1010,8 @@
                 </div>
 
             </div>
+
+            
 
         </article>
 
