@@ -3717,3 +3717,47 @@ a {
     }
 
 }
+
+/* MENÚ HAMBURGUESA PARA TODAS LAS PÁGINAS */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 27px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 25px;
+        background: #111;
+        flex-direction: column;
+        gap: 22px;
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+}
